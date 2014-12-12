@@ -43,7 +43,8 @@ echo "<a target="_blank" class="metro" href="http://tecmint.com" title='Go to Te
 echo "<a target="_blank" class="metro" href="/" title='Desktop Version'><span class="icon-firefox"></span></a>"
 echo "<a target="_blank" class="metro" href="info/" title='Server Info'><span class="icon-info"></span></a>"
 echo "<a target="_blank" class="metro" href="https://github.com/caezsar/network-tools" title='Github Project'><span class="icon-github"></span></a>"
-echo "<a target="_blank" class="metro" href="tools.tecmint.com/m/back-up/tools.tecmint.com.12-12-2014.zip" title='Download server backup'><span class="icon-download"></span></a>"
+echo "<a target="_blank" class="metro" href="http://tools.tecmint.com/m/back-up/tools.tecmint.com.12-12-2014.zip" title='Download server backup'><span class="icon-download"></span></a>"
+echo "<a target="_blank" class="metro" href="binfo/" title='Binfo'><span class="icon-info-2"></span></a>"
 
 echo "</span>"
 
