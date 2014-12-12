@@ -1,0 +1,8 @@
+#!/bin/bash
+
+items=`ps -Ao comm,pcpu,pmem,pid --sort=-pcpu | head -n 11 | grep -v COMMAND |/usr/bin/awk '{print "<td bgcolor=white><font color=blue><h6><strong>"$1","$2","$3","$4"</td></tr>"}'`
+
+split(){ arr=($items); }
+IFS=','$'\n' split
+
+printf "<td bgcolor=white><font color=blue><h6><strong> %s \n" "${arr[@]}"

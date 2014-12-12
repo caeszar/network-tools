@@ -1,0 +1,12 @@
+#!/bin/bash
+
+items=`netstat -tuln | grep -v Local | grep -v only |/usr/bin/awk '{print "<td bgcolor=white><font color=blue><h6><strong>"$1","$4","$5"</td></tr>"}'`
+
+split(){ arr=($items); }
+IFS=','$'\n' split
+
+printf "<td bgcolor=white><font color=blue><h6><strong> %s \n" "${arr[@]}"
+
+
+
+

@@ -1,0 +1,7 @@
+ps -Ao pcpu,comm --sort=-pcpu | head -n 10
+
+ps -Ao pmem,comm --sort=-pmem | head -n 10
+
+panel background:  .panel{margin-bottom:20px;background-color:#
+
+progress bar panel: .progress{height:20px;margin-bottom:20px;overflow:hidden;background-color:

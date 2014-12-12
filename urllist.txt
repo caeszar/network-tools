@@ -1,0 +1,9 @@
+http://tools.tecmint.com/
+http://tools.tecmint.com/dns.cgi
+http://tools.tecmint.com/net.cgi
+http://tools.tecmint.com/scan.cgi
+http://tools.tecmint.com/headers.cgi
+http://tools.tecmint.com/geoip.cgi
+http://tools.tecmint.com/ipcalc.cgi
+http://tools.tecmint.com/url.cgi
+http://tools.tecmint.com/pass.cgi

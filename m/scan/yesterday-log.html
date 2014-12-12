@@ -1,0 +1,563 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<head>
+<title>Logwatch  7.4.0  ( 05/02/12 )</title>
+<meta name="generator" content="Logwatch  7.4.0 ( 05/02/12 )">
+<style type="text/css">
+  h1 {color: gray; border-bottom: 3px double silver; font-family: sans-serif; }
+  h2 {color: white; border-bottom: 1px solid silver; font-family: sans-serif; }
+  h3 {color: white; border-bottom: 1px solid silver; font-family: sans-serif; }
+  th {background: #6D88AD; text-align: left; font-family: sans-serif; }
+  td {background: #EFEFEF; text-align: left; font-family: courier,serif; font-size: 10px; }
+  li { font-family: sans-serif; }
+  .ref {padding-left: 1%; }
+  .service {padding-left: 1%; }
+  .return_link {border-top: 1px; border-bottom: 1px;
+  padding: 1%; margin-top: 1%; margin-bottom: 1%; font-family: sans-serif; }
+  .copyright {color: black; border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+  padding: 1%; margin-top: 1%; margin-bottom: 1%;}
+</style>
+</head>
+<body style="width:90%; margin-left: 5%; margin-right: 5%" bgcolor="#FFFFFF" >
+<hr>
+<!-- End header.html -->
+<a name=top><ul>
+   <li><a href="#1">LOGWATCH Summary</a>
+   <li><a href="#2">Cron</a>
+   <li><a href="#3">EXIM</a>
+   <li><a href="#4">httpd</a>
+   <li><a href="#5">pam_unix</a>
+   <li><a href="#6">SSHD</a>
+   <li><a href="#7">Disk Space</a>
+</ul></a>
+<div class=service>
+         <table border=1 width=100%>
+           <tr><th>
+           <h2><a name="1">LOGWATCH Summary</a></h2>
+           </tr></th>
+  <tr>
+    <td bgcolor=#dddddd> &nbsp; &nbsp; &nbsp; Logwatch Version: 7.4.0 (05/02/12)
+</td>
+  </tr>
+  <tr>
+    <td bgcolor=#dddddd> &nbsp; &nbsp; &nbsp; Processing Initiated: Fri Dec 12 00:00:03 2014
+</td>
+  </tr>
+  <tr>
+    <td bgcolor=#dddddd> &nbsp; &nbsp; &nbsp; Date Range Processed: yesterday
+</td>
+  </tr>
+  <tr>
+    <td bgcolor=#dddddd> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ( 2014-Dec-11 )
+</td>
+  </tr>
+  <tr>
+    <td bgcolor=#dddddd> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Period is day.
+</td>
+  </tr>
+  <tr>
+    <td bgcolor=#dddddd> &nbsp; &nbsp; &nbsp; Detail Level of Output: 10
+</td>
+  </tr>
+  <tr>
+    <td bgcolor=#dddddd> &nbsp; &nbsp; &nbsp; Type of Output/Format: stdout / html
+</td>
+  </tr>
+  <tr>
+    <td bgcolor=#dddddd> &nbsp; &nbsp; &nbsp; Logfiles for Host: tools.tecmint.com
+</td>
+  </tr>
+  </table></div>
+  <div class=return_link><p><a href="#top">Back to Top</a></p></div>
+<div class=service>
+         <table border=1 width=100%>
+           <tr><th>
+           <h2><a name="2">Cron</a></h2>
+           </tr></th>
+  <tr>
+    <th align=left>Commands Run:
+</th>
+  </tr>
+  <tr>
+    <td bgcolor=#dddddd> &nbsp; User root:
+</td>
+  </tr>
+  <tr>
+    <td bgcolor=#dddddd> &nbsp; &nbsp; &nbsp; &nbsp; cd / && run-parts --report /etc/cron.hourly: 24 Time(s)
+</td>
+  </tr>
+  <tr>
+    <td bgcolor=#dddddd> &nbsp; &nbsp; &nbsp;/usr/bin/webalizer &gt; /var/log/webalizer.log 2&gt;&1: 1 Time(s)
+</td>
+  </tr>
+  <tr>
+    <td bgcolor=#dddddd> &nbsp; &nbsp; &nbsp;/usr/local/bin/apache_goaccess_html: 60 Time(s)
+</td>
+  </tr>
+  <tr>
+    <td bgcolor=#dddddd> &nbsp; &nbsp; &nbsp;/usr/local/bin/logwatch_yesterday_html &gt; /var/log/logwatch_yesterday.log 2&gt;&1: 1 Time(s)
+</td>
+  </tr>
+  <tr>
+    <td bgcolor=#dddddd> &nbsp; &nbsp; &nbsp;test -x /etc/init.d/anacron && /usr/sbin/invoke-rc.d anacron start &gt;/dev/null: 1 Time(s)
+</td>
+  </tr>
+  <tr>
+    <td bgcolor=#dddddd> &nbsp; &nbsp; &nbsp;test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.daily ): 1 Time(s)
+</td>
+  </tr>
+  </table></div>
+  <div class=return_link><p><a href="#top">Back to Top</a></p></div>
+<div class=service>
+         <table border=1 width=100%>
+           <tr><th>
+           <h2><a name="3">EXIM</a></h2>
+           </tr></th>
+  <tr>
+    <th align=left>Use of uninitialized value $StartQueue in numeric gt (&gt;) at /usr/share/logwatch/scripts/services/exim line 309, &lt;STDIN&gt; line 18.
+</th>
+  </tr>
+  <tr>
+    <th align=left>Use of uninitialized value $EndQueue in numeric gt (&gt;) at /usr/share/logwatch/scripts/services/exim line 309, &lt;STDIN&gt; line 18.
+</th>
+  </tr>
+  <tr>
+    <th align=left>
+</th>
+  </tr>
+  <tr>
+    <th align=left>--- Messages history ---
+</th>
+  </tr>
+  <tr>
+    <th align=left>
+</th>
+  </tr>
+  <tr>
+    <th align=left>-MsgID: 1XyyH9-00024g-Su:
+</th>
+  </tr>
+  <tr>
+    <td bgcolor=#dddddd> &nbsp;&nbsp;&nbsp;&nbsp;2014-12-11 07:35:05 &lt;= root@debian U=root P=local S=3553
+</td>
+  </tr>
+  <tr>
+    <td bgcolor=#dddddd> &nbsp;&nbsp;&nbsp;&nbsp;2014-12-11 07:35:05 ** u@debian &lt;root@debian&gt;: Unrouteable address
+</td>
+  </tr>
+  <tr>
+    <td bgcolor=#dddddd> &nbsp;&nbsp;&nbsp;&nbsp;2014-12-11 07:35:05 Completed
+</td>
+  </tr>
+  <tr>
+    <th align=left>-MsgID: 1XyyHB-00027c-73:
+</th>
+  </tr>
+  <tr>
+    <td bgcolor=#dddddd> &nbsp;&nbsp;&nbsp;&nbsp;2014-12-11 07:35:05 &lt;= &lt;&gt; R=1XyyH9-00024g-Su U=Debian-exim P=local S=4347
+</td>
+  </tr>
+  <tr>
+    <td bgcolor=#dddddd> &nbsp;&nbsp;&nbsp;&nbsp;2014-12-11 07:35:05 ** u@debian &lt;root@debian&gt;: Unrouteable address
+</td>
+  </tr>
+  <tr>
+    <td bgcolor=#dddddd> &nbsp;&nbsp;&nbsp;&nbsp;2014-12-11 07:35:05 Frozen (delivery error message)
+</td>
+  </tr>
+  <tr>
+    <th align=left>0 messages delivered immediately to 0 total recipients
+</th>
+  </tr>
+  </table></div>
+  <div class=return_link><p><a href="#top">Back to Top</a></p></div>
+<div class=service>
+         <table border=1 width=100%>
+           <tr><th>
+           <h2><a name="4">httpd</a></h2>
+           </tr></th>
+  <tr>
+    <th align=left>30.97 MB transferred in 3734 responses &nbsp;(1xx 0, 2xx 2748, 3xx 934, 4xx 52, 5xx 0)
+</th>
+  </tr>
+  <tr>
+    <td bgcolor=#dddddd> &nbsp; &nbsp;134 Images (0.18 MB),
+</td>
+  </tr>
+  <tr>
+    <td bgcolor=#dddddd> &nbsp; &nbsp; &nbsp;1 Documents (0.00 MB),
+</td>
+  </tr>
+  <tr>
+    <td bgcolor=#dddddd> &nbsp; 3332 Content pages (25.76 MB),
+</td>
+  </tr>
+  <tr>
+    <td bgcolor=#dddddd> &nbsp; &nbsp; &nbsp;4 Redirects (0.00 MB),
+</td>
+  </tr>
+  <tr>
+    <td bgcolor=#dddddd> &nbsp; &nbsp; &nbsp;2 Fonts (0.11 MB),
+</td>
+  </tr>
+  <tr>
+    <td bgcolor=#dddddd> &nbsp; &nbsp;261 Other (4.92 MB)
+</td>
+  </tr>
+  <tr>
+    <th align=left>
+</th>
+  </tr>
+  <tr>
+    <th align=left>Requests with error response codes
+</th>
+  </tr>
+  <tr>
+    <td bgcolor=#dddddd> &nbsp; 401 Unauthorized
+</td>
+  </tr>
+  <tr>
+    <td bgcolor=#dddddd> &nbsp; &nbsp; &nbsp;/m/scan/binfo/: 4 Time(s)
+</td>
+  </tr>
+  <tr>
+    <td bgcolor=#dddddd> &nbsp; &nbsp; &nbsp;/m/scan/: 1 Time(s)
+</td>
+  </tr>
+  <tr>
+    <td bgcolor=#dddddd> &nbsp; &nbsp; &nbsp;/m/scan/info/: 1 Time(s)
+</td>
+  </tr>
+  <tr>
+    <td bgcolor=#dddddd> &nbsp; 404 Not Found
+</td>
+  </tr>
+  <tr>
+    <td bgcolor=#dddddd> &nbsp; &nbsp; &nbsp;/FCKeditor/editor/filemanager/browser/defa ... CurrentFolder=/: 3 Time(s)
+</td>
+  </tr>
+  <tr>
+    <td bgcolor=#dddddd> &nbsp; &nbsp; &nbsp;/Admin/FCKeditor/editor/filemanager/browse ... CurrentFolder=/: 2 Time(s)
+</td>
+  </tr>
+  <tr>
+    <td bgcolor=#dddddd> &nbsp; &nbsp; &nbsp;/WebAdmin/FCKeditor/editor/filemanager/bro ... CurrentFolder=/: 2 Time(s)
+</td>
+  </tr>
+  <tr>
+    <td bgcolor=#dddddd> &nbsp; &nbsp; &nbsp;/fckeditor/editor/filemanager/browser/defa ... lderName=ok.asp: 2 Time(s)
+</td>
+  </tr>
+  <tr>
+    <td bgcolor=#dddddd> &nbsp; &nbsp; &nbsp;/fckeditor/editor/filemanager/connectors/a ... lderName=ok.asp: 2 Time(s)
+</td>
+  </tr>
+  <tr>
+    <td bgcolor=#dddddd> &nbsp; &nbsp; &nbsp;/FCKeditor/editor/filemanager/upload/php/upload.php: 1 Time(s)
+</td>
+  </tr>
+  <tr>
+    <td bgcolor=#dddddd> &nbsp; &nbsp; &nbsp;/admin/FCKeditor/editor/filemanager/browse ... CurrentFolder=/: 1 Time(s)
+</td>
+  </tr>
+  <tr>
+    <td bgcolor=#dddddd> &nbsp; &nbsp; &nbsp;/admin/FCKeditor/editor/filemanager/upload/php/upload.php: 1 Time(s)
+</td>
+  </tr>
+  <tr>
+    <td bgcolor=#dddddd> &nbsp; &nbsp; &nbsp;/admin/edit/editor/filemanager/connectors/ ... lderName=ok.asp: 1 Time(s)
+</td>
+  </tr>
+  <tr>
+    <td bgcolor=#dddddd> &nbsp; &nbsp; &nbsp;/admin/fckeditor/editor/filemanager/browse ... CurrentFolder=/: 1 Time(s)
+</td>
+  </tr>
+  <tr>
+    <td bgcolor=#dddddd> &nbsp; &nbsp; &nbsp;/admin/fckeditor/editor/filemanager/browse ... lderName=ok.asp: 1 Time(s)
+</td>
+  </tr>
+  <tr>
+    <td bgcolor=#dddddd> &nbsp; &nbsp; &nbsp;/admin/fckeditor/editor/filemanager/connec ... lderName=ok.asp: 1 Time(s)
+</td>
+  </tr>
+  <tr>
+    <td bgcolor=#dddddd> &nbsp; &nbsp; &nbsp;/admin/fckeditor/editor/filemanager/upload/php/upload.php: 1 Time(s)
+</td>
+  </tr>
+  <tr>
+    <td bgcolor=#dddddd> &nbsp; &nbsp; &nbsp;/admin_manager/fckeditor/editor/filemanage ... /asp/upload.asp: 1 Time(s)
+</td>
+  </tr>
+  <tr>
+    <td bgcolor=#dddddd> &nbsp; &nbsp; &nbsp;/components/FCKeditor/editor/filemanager/u ... /php/upload.php: 1 Time(s)
+</td>
+  </tr>
+  <tr>
+    <td bgcolor=#dddddd> &nbsp; &nbsp; &nbsp;/editor/editor/filemanager/upload/php/upload.php: 1 Time(s)
+</td>
+  </tr>
+  <tr>
+    <td bgcolor=#dddddd> &nbsp; &nbsp; &nbsp;/editors/FCKeditor/editor/filemanager/brow ... CurrentFolder=/: 1 Time(s)
+</td>
+  </tr>
+  <tr>
+    <td bgcolor=#dddddd> &nbsp; &nbsp; &nbsp;/editors/filemanager/connectors/asp/connec ... lderName=ok.asp: 1 Time(s)
+</td>
+  </tr>
+  <tr>
+    <td bgcolor=#dddddd> &nbsp; &nbsp; &nbsp;/etc/lib/pChart2/examples/index.php: 1 Time(s)
+</td>
+  </tr>
+  <tr>
+    <td bgcolor=#dddddd> &nbsp; &nbsp; &nbsp;/fck/editor/filemanager/browser/default/co ... CurrentFolder=/: 1 Time(s)
+</td>
+  </tr>
+  <tr>
+    <td bgcolor=#dddddd> &nbsp; &nbsp; &nbsp;/fck/editor/filemanager/connectors/asp/con ... lderName=ok.asp: 1 Time(s)
+</td>
+  </tr>
+  <tr>
+    <td bgcolor=#dddddd> &nbsp; &nbsp; &nbsp;/fckeditor/editor/filemanager/browser/defa ... CurrentFolder=/: 1 Time(s)
+</td>
+  </tr>
+  <tr>
+    <td bgcolor=#dddddd> &nbsp; &nbsp; &nbsp;/include/FCKeditor/editor/filemanager/upload/php/upload.php: 1 Time(s)
+</td>
+  </tr>
+  <tr>
+    <td bgcolor=#dddddd> &nbsp; &nbsp; &nbsp;/include/fckeditor/editor/filemanager/upload/php/upload.php: 1 Time(s)
+</td>
+  </tr>
+  <tr>
+    <td bgcolor=#dddddd> &nbsp; &nbsp; &nbsp;/include/js/fckeditor/editor/filemanager/u ... /php/upload.php: 1 Time(s)
+</td>
+  </tr>
+  <tr>
+    <td bgcolor=#dddddd> &nbsp; &nbsp; &nbsp;/mailing/tools/fckeditor/editor/filemanage ... CurrentFolder=/: 1 Time(s)
+</td>
+  </tr>
+  <tr>
+    <td bgcolor=#dddddd> &nbsp; &nbsp; &nbsp;/manage/FCKeditor/editor/filemanager/brows ... CurrentFolder=/: 1 Time(s)
+</td>
+  </tr>
+  <tr>
+    <td bgcolor=#dddddd> &nbsp; &nbsp; &nbsp;/manage/fckeditor/editor/filemanager/conne ... lderName=ok.asp: 1 Time(s)
+</td>
+  </tr>
+  <tr>
+    <td bgcolor=#dddddd> &nbsp; &nbsp; &nbsp;/manager/FCKeditor/editor/filemanager/brow ... CurrentFolder=/: 1 Time(s)
+</td>
+  </tr>
+  <tr>
+    <td bgcolor=#dddddd> &nbsp; &nbsp; &nbsp;/managment/fckeditor/editor/filemanager/up ... /php/upload.php: 1 Time(s)
+</td>
+  </tr>
+  <tr>
+    <td bgcolor=#dddddd> &nbsp; &nbsp; &nbsp;/sladmin/FCKEditor/editor/filemanager/upload/php/upload.php: 1 Time(s)
+</td>
+  </tr>
+  <tr>
+    <td bgcolor=#dddddd> &nbsp; &nbsp; &nbsp;/storelocator/sladmin/FCKEditor/editor/fil ... /php/upload.php: 1 Time(s)
+</td>
+  </tr>
+  <tr>
+    <td bgcolor=#dddddd> &nbsp; &nbsp; &nbsp;/sys/FCKeditor/editor/filemanager/upload/php/upload.php: 1 Time(s)
+</td>
+  </tr>
+  <tr>
+    <td bgcolor=#dddddd> &nbsp; &nbsp; &nbsp;/system/FCKeditor/editor/filemanager/brows ... CurrentFolder=/: 1 Time(s)
+</td>
+  </tr>
+  <tr>
+    <td bgcolor=#dddddd> &nbsp; &nbsp; &nbsp;/system/fckeditor/editor/filemanager/conne ... lderName=ok.asp: 1 Time(s)
+</td>
+  </tr>
+  <tr>
+    <td bgcolor=#dddddd> &nbsp; &nbsp; &nbsp;/tools/FCKeditor/editor/filemanager/upload/php/upload.php: 1 Time(s)
+</td>
+  </tr>
+  <tr>
+    <td bgcolor=#dddddd> &nbsp; &nbsp; &nbsp;/web-console/ServerInfo.jsp: 1 Time(s)
+</td>
+  </tr>
+  <tr>
+    <td bgcolor=#dddddd> &nbsp; &nbsp; &nbsp;/webadmin/fckeditor/editor/filemanager/bro ... CurrentFolder=/: 1 Time(s)
+</td>
+  </tr>
+  <tr>
+    <td bgcolor=#dddddd> &nbsp; &nbsp; &nbsp;/wp-login.php: 1 Time(s)
+</td>
+  </tr>
+  <tr>
+    <td bgcolor=#dddddd> &nbsp; &nbsp; &nbsp;/xmlrpc.php: 1 Time(s)
+</td>
+  </tr>
+  <tr>
+    <th align=left>
+</th>
+  </tr>
+  <tr>
+    <th align=left>A total of 10 ROBOTS were logged
+</th>
+  </tr>
+  <tr>
+    <td bgcolor=#dddddd> &nbsp; Mozilla/5.0 (compatible; Yahoo! Slurp; http://help.yahoo.com/help/us/ysearch/slurp) 1 Time(s)
+</td>
+  </tr>
+  <tr>
+    <td bgcolor=#dddddd> &nbsp; Python-urllib/1.17 1 Time(s)
+</td>
+  </tr>
+  <tr>
+    <td bgcolor=#dddddd> &nbsp; Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html) 1 Time(s)
+</td>
+  </tr>
+  <tr>
+    <td bgcolor=#dddddd> &nbsp; Mozilla/5.0 (compatible; YandexBot/3.0; +http://yandex.com/bots) 1 Time(s)
+</td>
+  </tr>
+  <tr>
+    <td bgcolor=#dddddd> &nbsp; - 1 Time(s)
+</td>
+  </tr>
+  <tr>
+    <td bgcolor=#dddddd> &nbsp; Mozilla/5.0 (compatible; GrapeshotCrawler/2.0; +http://www.grapeshot.co.uk/crawler.php) 1 Time(s)
+</td>
+  </tr>
+  <tr>
+    <td bgcolor=#dddddd> &nbsp; Googlebot (gocrawl v0.4) 1 Time(s)
+</td>
+  </tr>
+  <tr>
+    <td bgcolor=#dddddd> &nbsp; Domnutch-Bot/Nutch-1.0 (Domnutch; http://www.Nutch.de/) 1 Time(s)
+</td>
+  </tr>
+  <tr>
+    <td bgcolor=#dddddd> &nbsp; Mozilla/5.0 (Windows NT 5.1; rv:6.0.2) Gecko/20100101 Firefox/6.0.2 1 Time(s)
+</td>
+  </tr>
+  <tr>
+    <td bgcolor=#dddddd> &nbsp; Mozilla/5.0 (compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm) 1 Time(s)
+</td>
+  </tr>
+  </table></div>
+  <div class=return_link><p><a href="#top">Back to Top</a></p></div>
+<div class=service>
+         <table border=1 width=100%>
+           <tr><th>
+           <h2><a name="5">pam_unix</a></h2>
+           </tr></th>
+  <tr>
+    <th align=left>sshd:
+</th>
+  </tr>
+  <tr>
+    <td bgcolor=#dddddd> &nbsp; Sessions Opened:
+</td>
+  </tr>
+  <tr>
+    <td bgcolor=#dddddd> &nbsp; &nbsp; &nbsp;root: 17 Time(s)
+</td>
+  </tr>
+  <tr>
+    <th align=left>
+</th>
+  </tr>
+  </table></div>
+  <div class=return_link><p><a href="#top">Back to Top</a></p></div>
+<div class=service>
+         <table border=1 width=100%>
+           <tr><th>
+           <h2><a name="6">SSHD</a></h2>
+           </tr></th>
+  <tr>
+    <th align=left>
+</th>
+  </tr>
+  <tr>
+    <th align=left>Users logging in through sshd:
+</th>
+  </tr>
+  <tr>
+    <td bgcolor=#dddddd> &nbsp; root:
+</td>
+  </tr>
+  <tr>
+    <td bgcolor=#dddddd> &nbsp; &nbsp; &nbsp;5.12.246.179 (5-12-246-179.residential.rdsnet.ro): 12 times
+</td>
+  </tr>
+  <tr>
+    <td bgcolor=#dddddd> &nbsp; &nbsp; &nbsp;188.26.41.214 (188-26-41-214.rdsnet.ro): 5 times
+</td>
+  </tr>
+  <tr>
+    <th align=left>
+</th>
+  </tr>
+  <tr>
+    <th align=left>SFTP subsystem requests: 9 Time(s)
+</th>
+  </tr>
+  </table></div>
+  <div class=return_link><p><a href="#top">Back to Top</a></p></div>
+<div class=service>
+         <table border=1 width=100%>
+           <tr><th>
+           <h2><a name="7">Disk Space</a></h2>
+           </tr></th>
+  <tr>
+    <th align=left>Filesystem &nbsp; &nbsp; &nbsp;Size &nbsp;Used Avail Use% Mounted on
+</th>
+  </tr>
+  <tr>
+    <th align=left>rootfs &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 47G &nbsp;1.3G &nbsp; 46G &nbsp; 3% /
+</th>
+  </tr>
+  <tr>
+    <th align=left>/dev/root &nbsp; &nbsp; &nbsp; &nbsp;47G &nbsp;1.3G &nbsp; 46G &nbsp; 3% /
+</th>
+  </tr>
+  <tr>
+    <th align=left>devtmpfs &nbsp; &nbsp; &nbsp; &nbsp;997M &nbsp; &nbsp; 0 &nbsp;997M &nbsp; 0% /dev
+</th>
+  </tr>
+  <tr>
+    <th align=left>
+</th>
+  </tr>
+  </table></div>
+  <div class=return_link><p><a href="#top">Back to Top</a></p></div>
+<div class=service>
+         <table border=1 width=100%>
+           <tr><th>
+           <h2><a name="8">Logwatch Ended at Fri Dec 12 00:00:05 2014</a></h2>
+           </tr></th>
+  </table></div>
+  <div class=return_link><p><a href="#top">Back to Top</a></p></div>
+<!-- Start footer.html -->
+<div class=\"copyright\">
+<hr>
+<p>Logwatch &copy;Copyright 2002-2006 Kirk Bauer</p>
+<p>
+Permission is hereby granted, free of charge, to any person obtaining a copy of
+this software and associated documentation files (the "Software"), to deal in
+the Software without restriction, including without limitation the rights to
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
+of the Software, and to permit persons to whom the Software is furnished to do
+so, subject to the following conditions:
+</p>
+<p>
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+</p>
+<p>
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+</p></div>
+</body></html>

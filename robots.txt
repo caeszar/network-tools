@@ -1,0 +1,7 @@
+Sitemap: http://tools.tecmint.com/sitemap.xml.gz
+
+User-Agent: *
+Allow: /
+ 
+User-agent: Mediapartners-Google
+Disallow: 

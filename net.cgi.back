@@ -1,0 +1,128 @@
+#!/bin/bash
+echo "Content-type: text/html"
+echo ""
+POST=$(</dev/stdin)
+	
+cat head_net.html   
+./head.cgi
+
+### SEARCH BLOCK ###	
+echo "<div class="search_block">"	
+####  SEARCH FORMS ###
+echo "<div class="left">"
+
+echo " <div class="span9"> <p class="description">"
+
+echo "Choose a tool !"           
+echo "<div class="container">"
+
+### GOOGLE ADS RIGHT ###
+cat advertise_left.html
+### ENG GOOGLE ADS RIGHT
+
+      echo "<div class="grid fluid">"
+      echo "<div class="row"> "
+
+	echo "<form method=post>"      
+	echo "<p><input type=radio name=cmd value=ping checked>  <input id="searchbox" type=text placeholder="$REMOTE_ADDR" name=folder >"
+	echo "<input id="submit" value="Ping" type=submit></p>"
+
+    echo "<p><input type=radio name=cmd value=traceroute>  <input id="searchbox" type=text name=folder1 value= >"
+	echo "<input id="submit" value="Traceroute" type=submit></p>"
+
+    echo "<p><input type=radio name=cmd value=tracerouten>  <input id="searchbox" type=text name=folder2 value= >"
+	echo "<input id="submit" value='Traceroute n' type=submit></p>"	
+
+    echo "<p><input type=radio name=cmd value=tracepath>  <input id="searchbox" type=text name=folder3 value= >"
+	echo "<input id="submit" value="Tracepath" type=submit></p>"		
+	
+    echo "<p><input type=radio name=cmd value=tracepathn>  <input id="searchbox" type=text name=folder4 value= >"
+	echo "<input id="submit" value='Tracepath n' type=submit></p>"	
+	echo "</form>"
+
+echo " </div> "
+
+echo "<a style="color:#067D98"><small>TIP: Be aware that some routers are configured to ignore ICMP replay packets and traceroute can take extra time !</small></a> "
+
+echo "</div></div>"
+      
+      ## Fereastra ###     
+echo "</pre><div class="window"><div class="caption"><span class="icon icon-windows"></span><div class="title">Window Result</div><button class="btn-min"></button><button class="btn-max"></button><button class="btn-close"></button></div>"
+   
+echo "<div class="content">"
+
+echo "<pre class="prettyprint linenums no-phone" style="margin-top: 15px""    
+
+echo "<div id="code2" align="left">"
+
+	 
+	# read in our parameters
+	CMD=`echo "$POST" | sed -n 's/^.*cmd=\([^&]*\).*$/\1/p' | sed "s/%20/ /g"`
+	FOLDER=`echo "$POST" | sed -n 's/^.*folder=\([^&]*\).*$/\1/p' | sed "s/%20/ /g"| sed "s/%2F/\//g"`
+	FOLDER1=`echo "$POST" | sed -n 's/^.*folder1=\([^&]*\).*$/\1/p' | sed "s/%20/ /g"| sed "s/%2F/\//g"`
+    	FOLDER2=`echo "$POST" | sed -n 's/^.*folder2=\([^&]*\).*$/\1/p' | sed "s/%20/ /g"| sed "s/%2F/\//g"`
+	FOLDER3=`echo "$POST" | sed -n 's/^.*folder3=\([^&]*\).*$/\1/p' | sed "s/%20/ /g"| sed "s/%2F/\//g"`
+	FOLDER4=`echo "$POST" | sed -n 's/^.*folder4=\([^&]*\).*$/\1/p' | sed "s/%20/ /g"| sed "s/%2F/\//g"`
+
+	# test if any parameters were passed
+	if [ $CMD ]
+	then
+	  case "$CMD" in
+
+            ping)
+              echo "Ping result for  $FOLDER :<pre><div align="left">"
+			  echo "--------------------------------------------------------------------------------"
+              
+		/bin/ping -c3 "$FOLDER"
+
+			  echo "--------------------------------------------------------------------------------"
+              echo "</pre>"	
+				;;
+				
+            traceroute)
+              echo "Traceroute result for $FOLDER1 :<pre><div align="left">"
+			  echo "--------------------------------------------------------------------------------"
+              /usr/bin/traceroute "$FOLDER1"
+			  echo "--------------------------------------------------------------------------------"
+              echo "</pre>"			 				
+              ;;
+ 
+			tracerouten)
+              echo "Traceroute numerical $FOLDER2 :<pre><div align="left">"
+			  echo "--------------------------------------------------------------------------------"
+              /usr/bin/traceroute -n "$FOLDER2"               
+			  echo "--------------------------------------------------------------------------------"
+              echo "</pre>"			 				
+              ;;
+
+			tracepath)
+              echo "Tracepath result for $FOLDER3 :<pre><div align="left">"
+			  echo "--------------------------------------------------------------------------------"
+              /usr/bin/tracepath "$FOLDER3"           
+			  echo "--------------------------------------------------------------------------------"
+              echo "</pre>"			 				
+              ;;			  
+
+			tracepathn)
+              echo "Tracepath numerical result for $FOLDER4 :<pre><div align="left">"
+			  echo "--------------------------------------------------------------------------------"
+              result=`/usr/bin/tracepath -n "$FOLDER4"`
+         while read -r line; do
+        echo "................................................................................" 
+        echo "<strong> $line </strong>"
+        done <<< "$result"               
+			  echo "--------------------------------------------------------------------------------"
+              echo "</pre>"			 				
+              ;;
+                                  
+	     *)
+	      echo "Unknown command $CMD<br>"
+	      ;;
+	  esac
+	fi
+echo "</div>"
+echo "</div>"
+echo "</div>"
+echo "</div>"
+
+./footer.cgi

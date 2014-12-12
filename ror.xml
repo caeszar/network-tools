@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:ror="http://rorweb.com/0.1/" >
+<channel>
+  <title>ROR Sitemap for http://tools.tecmint.com/</title>
+  <link>http://tools.tecmint.com/</link>
+
+<item>
+     <link>http://tools.tecmint.com/</link>
+     <title>Online Network Tools: DNS, IP, Whois, Traceroute, Email</title>
+     <description>Free all-in-one online network troubleshooting, diagnostic and scanning tools at one awesome interface.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>0</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://tools.tecmint.com/dns.cgi</link>
+     <title> Online Network Tools: DNS Records verification </title>
+     <description>An Online DNS records check tool for A, MX, SPF, NS, SOA, CNAME, TTL and Trace</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://tools.tecmint.com/net.cgi</link>
+     <title> Online Network Tools: Network Tools </title>
+     <description>An Online tool to ping and trace servers and network protocols.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://tools.tecmint.com/scan.cgi</link>
+     <title> Online Network Tools: Port Scanner </title>
+     <description>A free online tool to scan network, scan ports and check ports.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://tools.tecmint.com/headers.cgi</link>
+     <title> Online Network Tools: Verify Server Headers </title>
+     <description>An Online HTTP headers check tool for web pages and web sites.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://tools.tecmint.com/geoip.cgi</link>
+     <title> Online Network Tools: GeoIP Location </title>
+     <description>An Online tool to find a location of IP address or domain name.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://tools.tecmint.com/ipcalc.cgi</link>
+     <title> Online Network Tools: IP Calculation </title>
+     <description>A free online tools for ip calculation or network calculation.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://tools.tecmint.com/url.cgi</link>
+     <title> Online Network Tools: Create Short URLs </title>
+     <description>A free tool to generate or create short urls for web pages or links.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://tools.tecmint.com/pass.cgi</link>
+     <title> Online Network Tools: Password Generator </title>
+     <description>A free online tool to generate strong paswords.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+</channel>
+</rss>
+  

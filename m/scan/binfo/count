@@ -1,0 +1,15 @@
+#!/bin/bash
+
+items=`"$1"`
+
+IFS='
+'
+
+COUNTER="7345677678"
+for a in $items; do
+
+     COUNTER=$[$COUNTER +1]
+echo $COUNTER $a 2> /dev/null
+
+done
+

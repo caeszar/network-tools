@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+<url>
+  <loc>http://tools.tecmint.com/m/</loc>
+</url>
+<url>
+  <loc>http://tools.tecmint.com/m/track.cgi</loc>
+</url>
+<url>
+  <loc>http://tools.tecmint.com/m/index.cgi</loc>
+</url>
+<url>
+  <loc>http://tools.tecmint.com/m/dns.cgi</loc>
+</url>
+<url>
+  <loc>http://tools.tecmint.com/m/net.cgi</loc>
+</url>
+<url>
+  <loc>http://tools.tecmint.com/m/scan.cgi</loc>
+</url>
+<url>
+  <loc>http://tools.tecmint.com/m/geoip.cgi</loc>
+</url>
+<url>
+  <loc>http://tools.tecmint.com/m/ipcalc.cgi</loc>
+</url>
+<url>
+  <loc>http://tools.tecmint.com/m/headers.cgi</loc>
+</url>
+<url>
+  <loc>http://tools.tecmint.com/m/url.cgi</loc>
+</url>
+<url>
+  <loc>http://tools.tecmint.com/m/pass.cgi</loc>
+</url>
+</urlset>

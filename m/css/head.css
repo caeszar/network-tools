@@ -1,0 +1,53 @@
+
+
+
+
+.header1{
+    background:url(/m/images/fg.png);
+	font-family: 'PT Sans', Arial, sans-serif;
+	text-shadow: 2px 1px 0px #283744;
+	font-family:'Arial Bold', Arial, sans-serif;
+	line-height: 30px;
+	font-size: 13px;
+	/* text-transform: uppercase; */
+	z-index: 9999;
+	position: relative;
+
+}
+.header1 a{
+
+	padding: 0px 5px;
+	letter-spacing: 0px;
+	color: #fff;
+	display: block;
+	float: left;
+
+}
+
+
+.header1 a:hover{
+color:#77C7FF;
+	border-radius: 5px;    
+    border-width: 1px;
+
+box-shadow: 2px 2px 5px #134074;
+
+
+ }
+
+.header1 span.right{
+	float: right;
+		font-size: 16px;
+
+}
+.header1 span.right a{
+	float: none;
+	display: inline;
+
+}
+.header1 span.right a:hover {
+	float: none;
+	font-size: 17px;
+
+}
+
