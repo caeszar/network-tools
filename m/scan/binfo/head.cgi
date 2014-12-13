@@ -23,6 +23,9 @@ cat << EOF
 		<![endif]-->
 		<link href="css/styles.css" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="css/icons.css" />
+		
+		<script type="text/javascript" src="js/paging.js"></script>
+		<script type="text/javascript" src="js/paging1.js"></script>		
 	</head>
 
                               <!-- BODY

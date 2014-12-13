@@ -1,10 +1,11 @@
 #!/bin/bash
 echo ""
 
+### START TABLE FUNCTION ###
 process() {
 cat << EOF
 
-   <table class="table table-bordered">
+   <table id="results" class="table table-bordered">
     <thead>
       <tr bgcolor="#f4f4f4">
 		<th><a class="text-info"></a></th>
@@ -20,17 +21,30 @@ cat << EOF
     </thead>
 
 EOF
-##Start table##
+##Start table with data##
 echo "<tbody>"
 echo "<tr bgcolor="#ffffff">"
 
-##Get rest of table###
+##Get rest of table from awk script###
 ./ptable
 
 ##Finish table###
 echo "  </table>"
+
+##Put pagination##
+cat << EOF
+<div id="pageNavPosition"></div>
+    <script type="text/javascript"><!--
+        var pager = new Pager('results', 8); 
+        pager.init(); 
+        pager.showPageNav('pager', 'pageNavPosition'); 
+        pager.showPage(1);
+    //--></script>
+EOF
+
 echo "</section>"
 }
+### END TABLES FUNCTION ###
 
 
 ./head.cgi

@@ -43,7 +43,7 @@ echo "</section>"
 tcp_servers() {
 cat << EOF
 
-   <table class="table table-bordered">
+   <table id="results" class="table table-bordered">
     <thead>
       <tr bgcolor="#f4f4f4">
 		<th><a class="text-info"></a></th>
@@ -58,7 +58,17 @@ EOF
 echo "<tbody>"
 echo "<tr bgcolor="#ffffff">"
 ./tcp_table
-echo "  </table>"
+echo "</table>"
+
+cat << EOF
+<div id="pageNavPosition"></div>
+    <script type="text/javascript"><!--
+        var pager = new Pager('results', 8); 
+        pager.init(); 
+        pager.showPageNav('pager', 'pageNavPosition'); 
+        pager.showPage(1);
+    //--></script>
+EOF
 echo "</section>"
 }
 
@@ -89,7 +99,7 @@ echo "</section>"
 net_conn() {
 cat << EOF
 
-   <table class="table table-bordered">
+   <table id="results1" class="table table-bordered">
     <thead>
       <tr bgcolor="#f4f4f4">
 		<th><a class="text-info"></a></th>
@@ -106,7 +116,18 @@ EOF
 echo "<tbody>"
 echo "<tr bgcolor="#ffffff">"
 ./net_table
-echo "  </table>"
+echo "</table>"
+
+cat << EOF
+<div id="pageNavPosition1"></div>
+    <script type="text/javascript"><!--
+        var pager1 = new Pager1('results1', 8); 
+        pager1.init(); 
+        pager1.showPageNav1('pager1', 'pageNavPosition1'); 
+        pager1.showPage1(1);
+    //--></script>
+EOF
+
 echo "</section>"
 }
 
@@ -149,7 +170,7 @@ cat << EOF
       
         <div class="panel-body">
           <div class="list-group">
-            <a  class="list-group-item active">Servers</a>
+            <a  class="list-group-item active">Servers - Table output</a>
              `tcp_servers` 
         </div>
       </div>

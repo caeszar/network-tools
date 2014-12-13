@@ -285,3 +285,60 @@ small.text-muted {
     padding-left:3px;
   }
 }
+
+
+.pg-normal {
+	padding: 0px 5px 0px 5px;
+	margin: 0px;
+	
+	border: 1px solid #036CB4;
+	background-color: #ffffff;
+	color: #036CB4;
+cursor: pointer;
+}
+.pg-normal:hover,
+.pg-normal:active {
+	background-color: #036CB9;
+
+	color: #ffffff;
+	}
+	
+.pg-selected {
+	padding: 0px 5px 0px 5px;
+	margin: 0px;
+	border: 1px solid #036CB4;
+	font-weight: bold;
+	background-color: #036CB4;
+	color: #FFF;
+cursor: pointer;
+}
+
+
+
+.pg-normal1 {
+	padding: 0px 5px 0px 5px;
+	margin: 0px;
+	
+	border: 1px solid #036CB4;
+	background-color: #ffffff;
+	color: #036CB4;
+cursor: pointer;
+}
+.pg-normal1:hover,
+.pg-normal1:active {
+	background-color: #036CB9;
+
+	color: #ffffff;
+	}
+	
+.pg-selected1 {
+	padding: 0px 5px 0px 5px;
+	margin: 0px;
+	border: 1px solid #036CB4;
+	font-weight: bold;
+	background-color: #036CB4;
+	color: #FFF;
+cursor: pointer;
+}
+
+

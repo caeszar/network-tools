@@ -1,0 +1,10 @@
+#!/bin/bash
+
+log_file=`cat ./apache_log.txt`
+
+items=`/usr/bin/awk -F: '{ if ($3<=499) print $1" " $3" " $6" " $7; }' < /etc/passwd | sort -d|/usr/bin/awk '{print "<td bgcolor=white><font color=blue><h6><strong>"$1","$2","$3","$4,"</td></tr>"}'`
+
+split(){ arr=($items); }
+IFS=','$'\n' split
+
+printf "<td bgcolor=white><font color=blue><h6><strong> %s \n" "${arr[@]}"
